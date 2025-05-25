@@ -54,6 +54,27 @@
         <div id="result" class="max-w-lg mx-auto mt-8 bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md text-center">
             <p class="text-xl">Your BMI: <span id="bmiValue" class="font-bold">--</span></p>
             <p class="text-xl mt-2">Category: <span id="bmiCategory" class="font-bold">--</span></p>
+            <div id="healthTipsSection" class="mt-6 text-sm text-gray-700 dark:text-gray-300">
+                <!-- Health tips will be displayed here by JavaScript -->
+            </div>
+            <div id="bmiChartContainer" class="mt-8 p-4 border rounded-lg shadow-md dark:border-gray-700">
+                <h3 class="text-lg font-semibold mb-4 text-center text-gray-800 dark:text-gray-200">BMI Categories</h3>
+                <div class="space-y-2">
+                    <div class="p-2 rounded-md bg-blue-500 text-white">
+                        <span class="font-semibold">Underweight:</span> Less than 18.5
+                    </div>
+                    <div class="p-2 rounded-md bg-green-500 text-white">
+                        <span class="font-semibold">Normal weight:</span> 18.5 – 24.9
+                    </div>
+                    <div class="p-2 rounded-md bg-yellow-500 text-white">
+                        <span class="font-semibold">Overweight:</span> 25 – 29.9
+                    </div>
+                    <div class="p-2 rounded-md bg-red-500 text-white">
+                        <span class="font-semibold">Obese:</span> 30 or greater
+                    </div>
+                </div>
+                <p class="text-xs text-gray-600 dark:text-gray-400 mt-3 text-center">This chart shows standard BMI categories. Consult a healthcare provider for personalized advice.</p>
+            </div>
         </div>
     </main>
     <script src="script.js" defer></script>
